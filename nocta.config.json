@@ -1,5 +1,5 @@
 {
-  "$schema": "https://nocta-ui.com/registry/config-schema.json",
+  "$schema": "https://nocta-ui.com/registry/schema/config-schema.json",
   "style": "default",
   "tailwind": {
     "css": "src/styles.css"
