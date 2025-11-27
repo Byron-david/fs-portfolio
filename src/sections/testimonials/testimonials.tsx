@@ -28,7 +28,6 @@ export default function Testimonials() {
 	const columns = useMemo(() => createColumns(testimonials), []);
 
 	return (
-		/* biome-ignore lint/correctness/useUniqueElementIds: anchor target appears once */
 		<Section
 			id="testimonials"
 			title="Share concise quotes from clients or teammates"

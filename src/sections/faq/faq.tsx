@@ -29,7 +29,6 @@ const renderAccordion = (items: FaqItem[], prefix: string) => (
 
 export default function FAQ() {
 	return (
-		/* biome-ignore lint/correctness/useUniqueElementIds: anchor target appears once */
 		<Section
 			id="faq"
 			title="Answer common pre-project questions"

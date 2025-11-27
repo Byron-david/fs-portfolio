@@ -5,7 +5,6 @@ import WorksCard from "./_components/works-card";
 
 export default function Works() {
 	return (
-		/* biome-ignore lint/correctness/useUniqueElementIds: anchor target appears once */
 		<Section
 			id="works"
 			title="Preview a few highlight projects"

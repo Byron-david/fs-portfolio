@@ -6,7 +6,6 @@ import { showcaseHighlights } from "@/sections/showcase/_constants/showcase";
 
 export default function Showcase() {
 	return (
-		/* biome-ignore lint/correctness/useUniqueElementIds: anchor target appears once */
 		<Section
 			id="showcase"
 			title="Highlight signature work or video studies"

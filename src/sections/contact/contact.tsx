@@ -6,7 +6,6 @@ import { GridPattern } from "@/sections/contact/_components/grid-pattern";
 
 export default function Contact() {
 	return (
-		/* biome-ignore lint/correctness/useUniqueElementIds: anchor target appears once */
 		<Section
 			id="contact"
 			title="Start a project or say hello"

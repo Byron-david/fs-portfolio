@@ -11,7 +11,6 @@ export default function Blog({ posts }: BlogSectionProps) {
 	const hasPosts = posts && posts.length > 0;
 
 	return (
-		/* biome-ignore lint/correctness/useUniqueElementIds: anchor target appears once */
 		<Section
 			id="blog"
 			title="Share your latest thinking"

@@ -6,7 +6,6 @@ import { ServiceCard as Card } from "./_components/service-card";
 
 export default function Services() {
 	return (
-		/* biome-ignore lint/correctness/useUniqueElementIds: anchor target appears once */
 		<Section
 			id="services"
 			title="Showcase the services you offer"
