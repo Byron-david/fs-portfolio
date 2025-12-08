@@ -182,8 +182,8 @@ export default function Hero() {
 			<div className="relative z-10 flex flex-col items-center gap-2">
 				<div style={{visibility: "hidden"}} ref={badgeRef} className="w-fit">
 					<ShinyBadge>
-						<FrameIcon aria-hidden="true" className="size-3.5" />
-						Your Role Here
+						{/* <FrameIcon aria-hidden="true" className="size-3.5" /> */}
+						Full Stack Developer
 					</ShinyBadge>
 				</div>
 				<h1
@@ -191,29 +191,30 @@ export default function Hero() {
 					ref={titleRef}
 					className="text-3xl text-center text-foreground font-medium text-balance max-w-3xl"
 				>
-					Add a headline that tells people what you design, build, or launch.
+					Full Stack Developer (React / Node / Python).
 				</h1>
 				<p
 		      style={{visibility: "hidden"}}
 					ref={descriptionRef}
 					className="text-base md:text-lg text-center text-foreground/70 font-medium text-balance leading-relaxed max-w-xl"
 				>
-					Use this paragraph to summarize your craft, industries served, or the
-					results clients can expect when working with you.
+					I used to build tools for robots and game engines. Now, I build for the web. I bring 
+					5 years of engineering experience from Google DeepMind and PlayStation to Full Stack development.
+
 				</p>
 			</div>
 			<div ref={actionsRef} className="relative z-10  flex items-center gap-2">
-				<Button
+				{/* <Button
 			    style={{visibility: "hidden"}}
 					variant="default"
 					size="md"
 					onClick={() => scrollTo("#contact")}
 				>
 					Start a project
-				</Button>
+				</Button> */}
 				<Button
 		      style={{visibility: "hidden"}}
-					variant="secondary"
+					variant="default"
 					size="md"
 					onClick={() => scrollTo("#works")}
 				>
@@ -221,9 +222,9 @@ export default function Hero() {
 				</Button>
 			</div>
 
-			<div className="absolute inset-0 z-0 h-full w-full pointer-events-none">
+			{/* <div className="absolute inset-0 z-0 h-full w-full pointer-events-none">
 				<Background />
-			</div>
+			</div> */}
 		</section>
 	);
 }

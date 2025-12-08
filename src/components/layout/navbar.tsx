@@ -17,10 +17,10 @@ registerGsapPlugins();
 const NAV_LINKS = [
 	{ label: "Services", target: "#services" },
 	{ label: "Works", target: "#works" },
-	{ label: "Showcase", target: "#showcase" },
-	{ label: "Testimonials", target: "#testimonials" },
-	{ label: "FAQ", target: "#faq" },
-	{ label: "Blog", target: "#blog" },
+	// { label: "Showcase", target: "#showcase" },
+	// { label: "Testimonials", target: "#testimonials" },
+	// { label: "FAQ", target: "#faq" },
+	// { label: "Blog", target: "#blog" },
 ] as const;
 
 const colorWithOpacity = (token: string, opacity: number) => {
@@ -276,7 +276,7 @@ export function Navbar() {
 				>
 					<div className="flex items-center gap-2">
 						<LogoIcon className="size-4" />
-						<span>Your Name</span>
+						<span>Byron David</span>
 					</div>
 				</Button>
 
@@ -300,9 +300,9 @@ export function Navbar() {
 				</div>
 
 				<div className="hidden md:flex items-center gap-2">
-					<ThemeToggle />
+					{/* <ThemeToggle /> */}
 
-					<Button
+					{/* <Button
 						variant="default"
 						size="sm"
 						className="text-xs"
@@ -310,7 +310,7 @@ export function Navbar() {
 						role="menuitem"
 					>
 						Contact
-					</Button>
+					</Button> */}
 				</div>
 
 				<div className="flex md:hidden items-center gap-2">

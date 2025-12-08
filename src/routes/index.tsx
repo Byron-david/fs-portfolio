@@ -20,13 +20,13 @@ function App() {
 	return (
 		<main className="mx-auto flex flex-col items-center justify-start w-full md:w-7xl md:border-x border-border divide-y divide-border/80">
 			<Hero />
-			<Services />
+			{/* <Services /> */}
 			<Works />
-			<Showcase />
-			<Testimonials />
-			<FAQ />
-			<Blog posts={posts} />
-			<Contact />
+			{/* <Showcase /> */}
+			{/* <Testimonials /> */}
+			{/* <FAQ /> */}
+			{/* <Blog posts={posts} /> */}
+			{/* <Contact /> */}
 			<Footer />
 		</main>
 	);

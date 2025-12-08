@@ -20,6 +20,12 @@ const badgeVariants = cva(
 					"text-background",
 					"hover:bg-foreground/75",
 				],
+				custom: [
+					"bg-transparent",        // Explicitly clear background
+					"text-custom",           // 90% opacity might be too faint for thin text without a bg
+					"hover:bg-custom/10",    // Lighter hover for outlines usually looks cleaner
+					"border border-custom",
+				],
 				secondary: [
 					"bg-card",
 					"hover:bg-card-muted text-foreground/45",

@@ -12,6 +12,7 @@
 	--color-popover: oklch(1 0 0);
 	--color-popover-muted: oklch(0.96 0.002 var(--base-hue));
 	--color-badge: oklch(0.1408 0.002 var(--base-hue));
+	--color-custom: oklch(0.623 0.188 254.6)
 	--color-foreground: oklch(0.1408 0.0044 var(--base-hue));
 	--color-primary: oklch(0.9824 0.0013 var(--base-hue));
 	--color-border: oklch(0.8925 0.0014 var(--base-hue));
@@ -121,6 +122,7 @@
 	--color-popover: var(--popover);
 	--color-popover-muted: var(--popover-muted);
 	--color-badge: var(--badge);
+	--color-custom: var(--custom);
 	--color-foreground: var(--foreground);
 	--color-primary: var(--primary);
 	--color-border: var(--border);
