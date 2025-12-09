@@ -1,0 +1,30 @@
+:root {
+  --color-hero : #6653f6;
+  --color-p : hsla(0, 0%, 0%, 0.6);
+  
+  
+  --color-gray : hsla(0, 0%, 0%, 0.8);
+  --color-yellow : #FFC107;
+  --color-green : #53f671;
+  --color-red : #f65353;
+  --color-blue : #6653f6;
+  --color-purple : #cf1ce0;
+  --color-gradient : linear-gradient(90deg, var(--color-blue), var(--color-purple)); 
+
+  --padding-base : 1rem;
+  --padding-small : 0.5rem;
+  --padding-tiny : 0.25rem;
+  --padding-container : 2rem;
+
+  --margin-base : 1rem;
+
+}
+
+#root {
+  background-color: white;
+  min-height: 100vh;
+}
+
+p {
+  color: var(--color-p);
+}

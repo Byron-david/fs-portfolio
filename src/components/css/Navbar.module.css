@@ -1,0 +1,54 @@
+/* src/Navbar.module.css */
+
+.navbar {
+  /* This makes it stick */
+  position: sticky;
+  top: 0; 
+  z-index: 1000; /* Ensures it sits on top of other content */
+
+  /* Layout */
+  display: flex;
+  justify-content: space-between; /* Pushes name to left, links to right */
+  align-items: center;
+  
+  /* Visuals */
+  background-color: #ffffff; /* Needs a background or content will show through */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  border-bottom: 1px solid #eaeaea;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* color: var(--color-gradient); */
+
+  /* Gradient Text */
+  background-image: var(--color-gradient);
+  -webkit-background-clip: text; /* For Webkit browsers */
+  background-clip: text;
+
+  /* Make the text transparent so the background shows through */
+  -webkit-text-fill-color: transparent; /* For Webkit browsers */
+  color: transparent;
+  /* Gradient Text */
+
+
+  text-decoration: none; /* If you make the name a link */
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem; /* Space between Resume and Portfolio */
+}
+
+.link {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #000;
+}
