@@ -1,5 +1,7 @@
 :root {
   --color-hero : #6653f6;
+  --color-base : white;
+  --color-secondary : #f9f9f9;
   --color-p : hsla(0, 0%, 0%, 0.6);
   
   
@@ -28,8 +30,12 @@
 }
 
 #root {
-  background-color: white;
+  background-color: var(--color-secondary);
   min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 p {
@@ -37,8 +43,3 @@ p {
 }
 
 
-.buttonBorder {
-    background-color: transparent;
-    border: 1px solid var(--color-blue);
-    color: var(--color-blue);
-}

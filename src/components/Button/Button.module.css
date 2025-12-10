@@ -5,26 +5,40 @@ button {
     cursor: pointer;     /* Restore the "hand" cursor */
     outline: inherit;    /* Keeps focus ring for accessibility */
     padding: var(--padding-small) var(--padding-base);
-    transition: background-color 0.3s ease, filter 1s ease;
+    transition: all 0.3s ease;
 }
 
 .buttonDefault {
-    background-color: var(--color-blue);
-    color: white;
+  display: inline-block;
+
+  margin: var(--margin-base);
+  background-color: var(--color-blue);
+  color: white;
+
+  font: inherit;
+  text-decoration: none;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+
+  padding: var(--padding-small) var(--padding-base);
+  border-radius: var(--border-radius);
+
+  transition: transform 0.1s ease, filter 0.2s ease, background-color 0.3s ease;
 }
 
-button {
-  /* Ensure the transition is on the base element */
-  transition: transform 0.1s ease, filter 0.2s ease;
-  cursor: pointer; /* Good practice for all buttons */
+.buttonBorder {
+    background-color: transparent;
+    border: 1px solid var(--color-blue);
+    color: var(--color-blue);
 }
 
-button:hover {
+.buttonDefault:hover {
   filter: brightness(90%);
-  transform: scale(1.05); /* Optional: Grow slightly on hover */
+  transform: scale(1.05); 
 }
 
-button:active {
-  transform: scale(0.95); /* Shrink to feel like a press */
-  filter: brightness(80%); /* Go even darker */
+.buttonDefault:active {
+  transform: scale(0.95); 
+  filter: brightness(80%); 
 }

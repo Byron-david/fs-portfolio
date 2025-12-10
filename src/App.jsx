@@ -4,7 +4,6 @@ import Navbar from './components/Navbar'
 import Main from './components/Main'
 import Intro from './components/Intro'
 import Portfolio from './components/Portfolio'
-import ProjectGrid from './components/ProjectGrid'
 
 function App() {
 
@@ -12,7 +11,7 @@ function App() {
     <>
       <Navbar />
       <Intro />
-      <ProjectGrid />
+      <Portfolio />
       {/* <Main /> */}
       {/* <div>
         <a href="https://vite.dev" target="_blank">

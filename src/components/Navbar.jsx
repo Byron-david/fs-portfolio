@@ -1,10 +1,21 @@
 import { Link } from "react-router-dom";
 import styles from './css/Navbar.module.css';
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
 function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <Link to="/" className={styles.name}>
+      <Link 
+        to="/" 
+        className={styles.name} 
+        onClick={scrollToTop} 
+      >
         Byron David
       </Link>
 
@@ -13,9 +24,12 @@ function Navbar() {
       <div className={styles.navLinks}>
         
         {/* Internal Link to Portfolio Page */}
-        <Link to="/portfolio" className={styles.link}>
+        <a 
+          href="#portfolio" 
+          className={styles.link}
+        >
           Portfolio
-        </Link>
+        </a>
 
         {/* External/Static Link to Resume PDF */}
         {/* Assumes you put 'resume.pdf' in your project's 'public' folder */}

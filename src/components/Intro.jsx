@@ -1,5 +1,6 @@
 import Button from './Button/Button';
 import styles from './css/Intro.module.css';
+import buttonStyles from './Button/Button.module.css';
 import Section from './Section'
 
 function Intro() {
@@ -19,8 +20,8 @@ function Intro() {
           Technical Artist turned <span className={styles.highlight}>Full Stack Developer.</span> I build robust
           web tools with the eye of a designer and the logic of a computer scientist.
         </p>
-      <Button text="Portfolio"/>
-      <Button text="Resume" className={"buttonBorder"}/>
+      <Button text="Portfolio" href="#portfolio"/>
+      <Button text="Resume" className={buttonStyles.buttonBorder}/>
     </Section>
 
   );
