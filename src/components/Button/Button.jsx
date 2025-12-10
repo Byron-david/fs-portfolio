@@ -1,0 +1,19 @@
+import styles from './Button.module.css'; 
+
+function Button({ text = "x", handleClick, 
+                  className = styles.buttonDefault, 
+                  backgroundColor,
+                  color
+                }) 
+  {
+  const buttonStyle = {
+    backgroundColor: backgroundColor,
+    color: color,
+  }
+
+  return (
+    <button style={buttonStyle} className={className} onClick={handleClick}>{text}</button>
+  )
+}
+
+export default Button

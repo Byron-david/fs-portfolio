@@ -1,0 +1,30 @@
+button {
+    margin: var(--margin-base);
+    /* padding: var(--padding-condensed) var(--padding-normal); */
+    font: inherit;       /* Important: inherit font styles from parent */
+    cursor: pointer;     /* Restore the "hand" cursor */
+    outline: inherit;    /* Keeps focus ring for accessibility */
+    padding: var(--padding-small) var(--padding-base);
+    transition: background-color 0.3s ease, filter 1s ease;
+}
+
+.buttonDefault {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+button {
+  /* Ensure the transition is on the base element */
+  transition: transform 0.1s ease, filter 0.2s ease;
+  cursor: pointer; /* Good practice for all buttons */
+}
+
+button:hover {
+  filter: brightness(90%);
+  transform: scale(1.05); /* Optional: Grow slightly on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Shrink to feel like a press */
+  filter: brightness(80%); /* Go even darker */
+}

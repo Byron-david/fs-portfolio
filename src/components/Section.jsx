@@ -1,22 +1,27 @@
+import Button from './Button/Button';
 import styles from './css/Section.module.css';
 
 function Section() {
   return (
     <section className={styles.sectionContainer}>
       <div className={styles.section}>
-        <div className={styles.roundedTag}>
+        {/* <div className={styles.roundedTag}>
           Full Stack Developer
-        </div>
+        </div> */}
+        {/* <h2>
+          Full Stack Developer
+        </h2> */}
         <h1>
-            Hi, I'm Byron David.
+            Hello, I'm Byron David.
         </h1>
-        <h2>
-          Full Stack Developer
-        </h2>
+
         <p>
-          blah blah blah.
+          Technical Artist turned <span className={styles.highlight}>Full Stack Developer.</span> I build robust
+          web tools with the eye of a designer and the logic of a computer scientist.
         </p>
       </div>
+      <Button text="Portfolio"/>
+      <Button text="Resume" className={"buttonBorder"}/>
     </section>
   );
 }

@@ -1,5 +1,5 @@
 .sectionContainer {
-  padding: var(--padding-container);
+  padding: var(--padding-base);
   /* background: linear-gradient(160deg, var(--color-blue) 0%, var(--color-green) 100%); */
   /* background-color: var(--color-blue);  */
   /* THE MAGIC TRICK: Creates the diagonal cut */
@@ -21,6 +21,24 @@ h1 {
 h2 {
   color: var(--color-blue);
   margin: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-blue) !important; /* Your purple brand color */
+  outline-offset: 2px;
+}
+
+p {
+  font-size: var(--font-med);
+}
+
+.highlight {
+  color: var(--color-blue);
+  font-weight: 600;
 }
 
 .roundedTag {
