@@ -38,6 +38,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.margin0 {
+  margin: 0;
+}
+
 p {
   color: var(--color-p);
 }

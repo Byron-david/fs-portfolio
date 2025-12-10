@@ -24,7 +24,14 @@ button {
   padding: var(--padding-small) var(--padding-base);
   border-radius: var(--border-radius);
 
+  margin: 0;
+
   transition: transform 0.1s ease, filter 0.2s ease, background-color 0.3s ease;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1.5rem;
 }
 
 .buttonBorder {
