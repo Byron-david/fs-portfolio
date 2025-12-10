@@ -9,18 +9,23 @@
   /* min-height: 60vh; */
 }
 
-.section {
+.contentWrapper {
   padding: var(--padding-base);
 }
 
+.sectionTitle {
+  color: var(--color-title);
+  font-size: 2rem;
+
+}
+
 h1 {
-  color: var(--color-gray);
+  color: var(--color-title);
   margin: var(--margin-base) 0;
 }
 
 h2 {
   color: var(--color-blue);
-  margin: 0;
 }
 
 button:focus {

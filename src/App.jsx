@@ -2,14 +2,17 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Main from './components/Main'
-import Section from './components/Section'
+import Intro from './components/Intro'
+import Portfolio from './components/Portfolio'
+import ProjectGrid from './components/ProjectGrid'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <Section />
+      <Intro />
+      <ProjectGrid />
       {/* <Main /> */}
       {/* <div>
         <a href="https://vite.dev" target="_blank">

@@ -1,0 +1,101 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--padding-large);
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; /* Spacing between projects */
+}
+
+.card {
+  display: grid;
+  padding: 1rem;
+  /* Desktop: 1st col is 40% (image), 2nd col is auto (text) */
+  grid-template-columns: 1fr 1fr; 
+  gap: 2rem;
+  align-items: center; /* Vertically center the text */
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  padding: var(--padding-large);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-title);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-p);
+  margin-bottom: 1.5rem;
+}
+
+.techStack {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background: #e0e0e0;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius);
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.linkContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.link {
+  color: var(--color-blue);
+
+  /* Button Style */
+  /* padding: var(--padding-button);
+  border-radius: var(--border-radius);
+  color: white;
+  background-color: var(--color-blue); */
+
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    /* Stack them vertically on mobile */
+    grid-template-columns: 1fr; 
+  }
+  
+  .imageContainer {
+    height: 200px; /* Force a smaller height on mobile */
+  }
+}

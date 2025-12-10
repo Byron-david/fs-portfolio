@@ -3,23 +3,27 @@
   --color-p : hsla(0, 0%, 0%, 0.6);
   
   
-  --color-gray : hsla(0, 0%, 0%, 0.8);
+  --color-title : hsla(0, 0%, 0%, 0.8);
   --color-yellow : #FFC107;
   --color-green : #53f671;
   --color-red : #f65353;
   --color-blue : #6653f6;
-  --color-purple : #cf1ce0;
+  --color-purple : #9f53f6;
   --color-gradient : linear-gradient(90deg, var(--color-blue), var(--color-purple)); 
 
   --padding-base : 1rem;
+  --padding-large : 2rem;
   --padding-small : 0.5rem;
   --padding-tiny : 0.25rem;
   --padding-container : 2rem;
-
+  --padding-button : var(--padding-small) var(--padding-base);
+  
   --margin-base : 1rem;
   --margin-small : 0.5rem;
   --font-large : 1.5rem;
   --font-med : 1.25rem;
+
+  --border-radius : 0.5rem 
 
 }
 
@@ -31,6 +35,7 @@
 p {
   color: var(--color-p);
 }
+
 
 .buttonBorder {
     background-color: transparent;
