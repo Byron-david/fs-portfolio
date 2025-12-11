@@ -7,8 +7,56 @@
 .introContainer {
   max-width: 65ch;
   line-height: 1.6;
+  margin: 5rem 0;
 }
 
-h2 {
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(50px);
+    opacity: 0;
+
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpFast {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(50px);
+    opacity: 0;
+
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.h1Anim {
+  animation: slideUp 1s ease-out forwards;
+}
+
+.introContainer h2 {
+  opacity: 0;
   margin: 0;
+  animation: slideUp .75s ease-out 1s forwards;
+}
+
+.introContainer p {
+  opacity: 0;
+  animation: slideUp .75s ease-out 1s forwards;
+}
+
+.introContainer button,
+.introContainer a {
+  opacity: 0;
+  animation: slideUp 1s ease-out 1s forwards;
 }

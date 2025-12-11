@@ -10,7 +10,7 @@ function Intro() {
           Full Stack Developer
         </div> */}
 
-        <h1>
+        <h1 className={styles.h1Anim}>
             Hello, I'm Byron David.
         </h1>
         <h2>

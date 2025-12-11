@@ -1,6 +1,5 @@
 .sectionContainer {
   padding: var(--padding-base);
-  margin: 10rem 0;
   /* background: linear-gradient(160deg, var(--color-blue) 0%, var(--color-green) 100%); */
   /* background-color: var(--color-blue);  */
   /* THE MAGIC TRICK: Creates the diagonal cut */
