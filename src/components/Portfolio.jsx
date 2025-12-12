@@ -8,34 +8,27 @@ const projects = [
     id: 1,
     title: "Technical Artist Portfolio",
     description: "A portfolio website for displaying artistic works.",
-    image: website1, // Ensure this exists in your public folder
+    image: website1,
     tech: ["Flask", "Python", "JS"],
     link: "https://github.com/username/project1"
   },
   {
     id: 2,
     title: "Stock Option Tracker",
-    description: "An interface for Oculus Quest 2 ensuring smooth hardware communication.",
+    description: "An application to track stocks and options.",
     image: website1,
     tech: ["React", "Node", "Express"],
     link: "https://github.com/username/project2"
   },
   {
     id: 3,
-    title: "Technical Artist Portfolio",
-    description: "A portfolio website for displaying artistic works.",
-    image: website1, // Ensure this exists in your public folder
+    title: "Python Tools for Blender",
+    description: "Plugins for Blender made in python to import/export with simulation software",
+    image: website1,
     tech: ["Flask", "Python", "JS"],
     link: "https://github.com/username/project1"
   },
-  {
-    id: 4,
-    title: "Stock Option Tracker",
-    description: "An interface for Oculus Quest 2 ensuring smooth hardware communication.",
-    image: website1,
-    tech: ["React", "Node", "Express"],
-    link: "https://github.com/username/project2"
-  }
+
 ];
 
 const Portfolio = () => {

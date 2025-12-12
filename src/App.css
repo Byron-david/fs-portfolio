@@ -39,7 +39,6 @@ html {
 }
 
 html, body {
-  overflow-x: hidden; /* Hide horizontal scrollbars globally */
   max-width: 100%;
 }
 

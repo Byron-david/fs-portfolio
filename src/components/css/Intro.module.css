@@ -12,25 +12,7 @@
 
 @keyframes slideUp {
   0% {
-    opacity: 0;
-  }
-  70% {
-    transform: translateX(50px);
-    opacity: 0;
-
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes slideUpFast {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    transform: translateX(80px);
+    transform: translateX(60px);
     opacity: 0;
 
   }
@@ -41,22 +23,22 @@
 }
 
 .h1Anim {
-  animation: slideUp 1s ease-out forwards;
+  animation: slideUp 0.3s ease-out forwards;
 }
 
 .introContainer h2 {
   opacity: 0;
   margin: 0;
-  animation: slideUp .75s ease-out 0.8s forwards;
+  animation: slideUp .3s ease-out 0.6s forwards;
 }
 
 .introContainer p {
   opacity: 0;
-  animation: slideUp .75s ease-out 0.8s forwards;
+  animation: slideUp .3s ease-out 0.6s forwards;
 }
 
-.introContainer button,
-.introContainer a {
+.introButtons {
   opacity: 0;
-  animation: slideUp 1s ease-out 0.9s forwards;
+  animation: slideUp .3s ease-out 0.8s forwards;
 }
+

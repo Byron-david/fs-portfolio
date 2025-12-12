@@ -11,7 +11,7 @@ function Intro() {
         </div> */}
 
         <h1 className={styles.h1Anim}>
-            Hello, I'm Byron David.
+            Hello, I'm Byron.
         </h1>
         <h2>
           Full Stack Developer
@@ -31,7 +31,7 @@ function Intro() {
           I'm versed in React, Flask, Node, Express, Postgres and much more...
         </p>
 
-      <div className={buttonStyles.buttonContainer}>
+      <div className={`${buttonStyles.buttonContainer} ${styles.introButtons}`}>
         <Button text="Portfolio" href="#portfolio"/>
         <Button text="Resume" className={buttonStyles.buttonBorder}/>
       </div>
