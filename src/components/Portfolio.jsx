@@ -25,7 +25,7 @@ const projects = [
     title: "Python Tools for Blender",
     description: "Plugins for Blender made in python to import/export with simulation software",
     image: website1,
-    tech: ["Flask", "Python", "JS"],
+    tech: ["Python", "Blender", "Mujoco"],
     link: "https://github.com/username/project1"
   },
 

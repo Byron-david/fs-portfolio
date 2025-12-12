@@ -23,22 +23,22 @@
 }
 
 .h1Anim {
-  animation: slideUp 0.3s ease-out forwards;
+  animation: slideUp 0.5s ease-out forwards;
 }
 
 .introContainer h2 {
   opacity: 0;
   margin: 0;
-  animation: slideUp .3s ease-out 0.6s forwards;
+  animation: slideUp 0.5s ease-out 0.6s forwards;
 }
 
 .introContainer p {
   opacity: 0;
-  animation: slideUp .3s ease-out 0.6s forwards;
+  animation: slideUp 0.5s ease-out 0.6s forwards;
 }
 
 .introButtons {
   opacity: 0;
-  animation: slideUp .3s ease-out 0.8s forwards;
+  animation: slideUp 0.5s ease-out 1s forwards;
 }
 

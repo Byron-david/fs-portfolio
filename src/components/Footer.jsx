@@ -8,8 +8,6 @@ function Intro() {
         @Byron David
       </Section>
     </footer>
-
-
   );
 }
 
