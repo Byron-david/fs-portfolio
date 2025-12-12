@@ -19,6 +19,22 @@ const projects = [
     image: website1,
     tech: ["React", "Node", "Express"],
     link: "https://github.com/username/project2"
+  },
+  {
+    id: 3,
+    title: "Technical Artist Portfolio",
+    description: "A portfolio website for displaying artistic works.",
+    image: website1, // Ensure this exists in your public folder
+    tech: ["Flask", "Python", "JS"],
+    link: "https://github.com/username/project1"
+  },
+  {
+    id: 4,
+    title: "Stock Option Tracker",
+    description: "An interface for Oculus Quest 2 ensuring smooth hardware communication.",
+    image: website1,
+    tech: ["React", "Node", "Express"],
+    link: "https://github.com/username/project2"
   }
 ];
 

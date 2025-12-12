@@ -11,18 +11,35 @@
 }
 
 .grid {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem; /* Spacing between projects */
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; */
+  display: grid;
+  /* Exactly 2 equal columns on desktop */
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
 }
 
-.card {
+/* .card {
   display: grid;
   padding: 1rem;
-  /* Desktop: 1st col is 40% (image), 2nd col is auto (text) */
   grid-template-columns: 1fr 1fr; 
   gap: 2rem;
-  align-items: center; /* Vertically center the text */
+  align-items: center;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background: var(--color-base);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+} */
+
+.card {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  /* grid-template-columns: 1fr 1fr;  */
+  /* gap: 2rem; */
   border-radius: var(--border-radius);
   overflow: hidden;
   background: var(--color-base);
@@ -41,7 +58,7 @@
 }
 
 .content {
-  padding: var(--padding-large);
+  padding: 0 var(--padding-large);
 }
 
 .title {
@@ -91,12 +108,14 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .card {
-    /* Stack them vertically on mobile */
-    grid-template-columns: 1fr; 
-  }
+  .grid {
+      grid-template-columns: 1fr;
+    }
+  .container {
+      padding: 1rem; /* Smaller padding gives the cards more room */
+    }
   
-  .imageContainer {
-    height: 200px; /* Force a smaller height on mobile */
+  .grid {
+    gap: 1rem; /* Smaller gap helps too */
   }
 }

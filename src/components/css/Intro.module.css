@@ -29,8 +29,8 @@
   0% {
     opacity: 0;
   }
-  70% {
-    transform: translateX(50px);
+  60% {
+    transform: translateX(80px);
     opacity: 0;
 
   }
@@ -47,16 +47,16 @@
 .introContainer h2 {
   opacity: 0;
   margin: 0;
-  animation: slideUp .75s ease-out 1s forwards;
+  animation: slideUp .75s ease-out 0.8s forwards;
 }
 
 .introContainer p {
   opacity: 0;
-  animation: slideUp .75s ease-out 1s forwards;
+  animation: slideUp .75s ease-out 0.8s forwards;
 }
 
 .introContainer button,
 .introContainer a {
   opacity: 0;
-  animation: slideUp 1s ease-out 1s forwards;
+  animation: slideUp 1s ease-out 0.9s forwards;
 }

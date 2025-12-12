@@ -17,7 +17,7 @@ function Intro() {
           Full Stack Developer
         </h2>
         {/* <span className={styles.highlight}>Full Stack Developer.</span> */}
-        <p>
+        {/* <p>
           I spent the last five years building pipelines for robotics at DeepMind and designed for
           AAA games at PlayStation. Now, I’m bringing that same performance-obsessed mindset to the browser.
         </p>
@@ -25,6 +25,10 @@ function Intro() {
           I write code that creates experiences. Whether it's
           Python automation or a React frontend, I build tools that are as satisfying to use as
           they are to look at.
+        </p> */}
+        <p>
+          A passionate Full Stack and Python Developer with a background in 3d design for games and simulation. 
+          I'm versed in React, Flask, Node, Express, Postgres and much more...
         </p>
 
       <div className={buttonStyles.buttonContainer}>
