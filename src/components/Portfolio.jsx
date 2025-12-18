@@ -13,7 +13,7 @@ const projects = [
     image: optionWebsite,
     tech: ["React", "Node", "Express", "Postgres"],
     link: "https://option-website-one.vercel.app/",
-    gitLink: "https://option-website-one.vercel.app/"
+    gitLink: "https://github.com/Byron-david/Option-Website"
   },
   {
     id: 2,
