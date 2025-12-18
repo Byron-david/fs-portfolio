@@ -7,6 +7,8 @@ const scrollToTop = () => {
   });
 };
 
+const resume = "https://docs.google.com/document/d/1uBpM3bm3Dk4MaqCDhA-WG-rCPGFk2dNBnpGOgdqUIAQ/edit?usp=sharing";
+
 function Navbar() {
   return (
     <nav className={styles.navbar}>
@@ -31,7 +33,7 @@ function Navbar() {
 
         {/* External/Static Link to Resume PDF */}
         <a 
-          href="/resume.pdf" 
+          href={resume} 
           target="_blank" 
           rel="noopener noreferrer" 
           className={styles.link}

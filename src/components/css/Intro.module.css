@@ -4,10 +4,16 @@
   font-weight: 600;
 }
 
-.introContainer {
+.headingContainer {
   max-width: 65ch;
   line-height: 1.6;
   margin: 5rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 @keyframes slideUp {
@@ -42,3 +48,14 @@
   animation: slideUp 0.5s ease-out 1s forwards;
 }
 
+.imgContainer {
+  justify-items: center;
+}
+
+.image {
+  max-width: 50%;       /* Fill the width of .imageContainer */
+  object-fit: cover; /* Ensures image isn't squished; it crops if needed */
+  border-radius: 12px; /* Optional: adds rounded corners */
+  display: block;    /* Removes default bottom spacing on images */
+
+}
