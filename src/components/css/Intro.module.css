@@ -7,7 +7,7 @@
 .introContainer {
   max-width: 65ch;
   line-height: 1.6;
-  margin: 5rem 0;
+  margin: 5rem;
 }
 
 @keyframes slideUp {

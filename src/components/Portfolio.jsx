@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './css/Portfolio.module.css';
 import Section from './Section';
-import website1 from "../assets/technicalArtWebsite.png";
+import TechArtPortfolio from "../assets/technicalArtWebsite.png";
 import optionWebsite from "../assets/OptionTracker.png";
+import pythonTools from "../assets/PythonTools.png";
 
 const projects = [
   {
@@ -18,19 +19,19 @@ const projects = [
     id: 2,
     title: "Python Tools for Blender",
     description: "Plugins for Blender made in python to import/export with simulation software",
-    image: website1,
+    image: pythonTools,
     tech: ["Python", "Blender", "Mujoco"],
-    link: "https://github.com/username/project1",
-    gitLink: "https://github.com/username/project1"
+    // link: "https://github.com/Byron-david/Option-Website/",
+    gitLink: "https://github.com/Byron-david/Python-Tools"
   },
   {
     id: 3,
     title: "Technical Artist Portfolio",
     description: "A portfolio website for displaying artistic works.",
-    image: website1,
+    image: TechArtPortfolio,
     tech: ["Flask", "Python", "JS"],
     link: "https://www.artofbyron.com",
-    gitLink: "https://www.artofbyron.com"
+    gitLink: "https://github.com/Byron-david/Option-Website/"
   },
 
 ];
@@ -61,7 +62,9 @@ const Portfolio = () => {
                         </div>
 
                         <div className={styles.linkContainer}>
-                            <a href={project.link} className={styles.link}>Live Demo</a>
+                          {project.link ?
+                            <a href={project.link} className={styles.link}>Live Demo</a> 
+                            : ""}
                             <a href={project.gitLink} className={styles.link}>GitHub</a>
                         </div>
                     </div>
