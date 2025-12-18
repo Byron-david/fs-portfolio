@@ -31,7 +31,7 @@ const projects = [
     image: TechArtPortfolio,
     tech: ["Flask", "Python", "JS"],
     link: "https://www.artofbyron.com",
-    gitLink: "https://github.com/Byron-david/Option-Website/"
+    gitLink: "https://github.com/Byron-david/Portfolio-Website"
   },
 
 ];
