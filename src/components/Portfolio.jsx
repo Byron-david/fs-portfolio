@@ -1,32 +1,36 @@
 import React from 'react';
 import styles from './css/Portfolio.module.css';
 import Section from './Section';
-import website1 from "../assets/website1_cropped.png";
+import website1 from "../assets/technicalArtWebsite.png";
+import optionWebsite from "../assets/OptionTracker.png";
 
 const projects = [
   {
     id: 1,
-    title: "Technical Artist Portfolio",
-    description: "A portfolio website for displaying artistic works.",
-    image: website1,
-    tech: ["Flask", "Python", "JS"],
-    link: "https://github.com/username/project1"
+    title: "Stock Option Tracker",
+    description: "A Full Stack application with authentication to track stocks and options.",
+    image: optionWebsite,
+    tech: ["React", "Node", "Express", "Postgres"],
+    link: "https://option-website-one.vercel.app/",
+    gitLink: "https://option-website-one.vercel.app/"
   },
   {
     id: 2,
-    title: "Stock Option Tracker",
-    description: "An application to track stocks and options.",
-    image: website1,
-    tech: ["React", "Node", "Express"],
-    link: "https://github.com/username/project2"
-  },
-  {
-    id: 3,
     title: "Python Tools for Blender",
     description: "Plugins for Blender made in python to import/export with simulation software",
     image: website1,
     tech: ["Python", "Blender", "Mujoco"],
-    link: "https://github.com/username/project1"
+    link: "https://github.com/username/project1",
+    gitLink: "https://github.com/username/project1"
+  },
+  {
+    id: 3,
+    title: "Technical Artist Portfolio",
+    description: "A portfolio website for displaying artistic works.",
+    image: website1,
+    tech: ["Flask", "Python", "JS"],
+    link: "https://www.artofbyron.com",
+    gitLink: "https://www.artofbyron.com"
   },
 
 ];
@@ -58,7 +62,7 @@ const Portfolio = () => {
 
                         <div className={styles.linkContainer}>
                             <a href={project.link} className={styles.link}>Live Demo</a>
-                            <a href={project.link} className={styles.link}>GitHub</a>
+                            <a href={project.gitLink} className={styles.link}>GitHub</a>
                         </div>
                     </div>
                 </article>

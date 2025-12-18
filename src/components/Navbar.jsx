@@ -4,7 +4,6 @@ import styles from './css/Navbar.module.css';
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
   });
 };
 
@@ -23,7 +22,6 @@ function Navbar() {
       {/* RIGHT SIDE: Links */}
       <div className={styles.navLinks}>
         
-        {/* Internal Link to Portfolio Page */}
         <a 
           href="#portfolio" 
           className={styles.link}
@@ -32,7 +30,6 @@ function Navbar() {
         </a>
 
         {/* External/Static Link to Resume PDF */}
-        {/* Assumes you put 'resume.pdf' in your project's 'public' folder */}
         <a 
           href="/resume.pdf" 
           target="_blank" 
