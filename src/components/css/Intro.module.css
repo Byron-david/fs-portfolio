@@ -7,13 +7,15 @@
 .headingContainer {
   max-width: 65ch;
   line-height: 1.6;
-  margin: 5rem;
+  flex: 1;
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  margin: 2rem;
+  gap: 4rem;
 }
 
 @keyframes slideUp {
@@ -49,13 +51,29 @@
 }
 
 .imgContainer {
-  justify-items: center;
+  flex: 1;              /* Takes up proportional space (1 part) */
+  display: flex;        /* Enables centering of the img tag */
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
-  max-width: 50%;       /* Fill the width of .imageContainer */
-  object-fit: cover; /* Ensures image isn't squished; it crops if needed */
-  border-radius: 12px; /* Optional: adds rounded corners */
-  display: block;    /* Removes default bottom spacing on images */
+  width: 80%;          /* Fills the imgContainer */
+  max-width: 400px;     /* Optional: Stops it from getting too massive on huge screens */
+  height: auto;         /* Maintains aspect ratio */
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
 
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .introButtons {
+    justify-content: center;
+  }
 }
