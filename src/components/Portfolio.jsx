@@ -12,7 +12,7 @@ const projects = [
     description: "A Full Stack application with authentication to track stocks and options.",
     image: optionWebsite,
     tech: ["React", "Node", "Express", "Postgres"],
-    link: "https://option-website-one.vercel.app/",
+    link: "https://charismatic-truth-production.up.railway.app/",
     gitLink: "https://github.com/Byron-david/Option-Website"
   },
   {
